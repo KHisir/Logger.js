@@ -1,7 +1,6 @@
 # Logger.js
 This little javascript framework allows custom log outputs.
 
-
 // How to use:
 
 <head>
@@ -13,7 +12,7 @@ This little javascript framework allows custom log outputs.
 // initialize
 var logger = new ClassLogger();
 
-
+// outputs
 logger.Trace('message', anydata); // text-color is gray
 
 		or

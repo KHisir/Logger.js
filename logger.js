@@ -28,7 +28,7 @@ var ClassLogger = (function () {
     ClassLogger.prototype.Trace = function (message, data) {
 
         if (DEBUG) {
-            message = kendo.toString(new Date(), "G") + " - Trace:  " + message;
+            message = new Date() + " - Trace:  " + message;
 
             if (arguments[1] != undefined) {
                 console.log("%c" + message, "color: #D2D7D3;", data);
@@ -49,7 +49,7 @@ var ClassLogger = (function () {
     ClassLogger.prototype.Error = function (message, data) {
 
         if (DEBUG) {
-            message = kendo.toString(new Date(), "G") + " - Error:  " + message;
+            message = new Date() + " - Error:  " + message;
 
             if (arguments[1] != undefined) {
                 console.log("%c" + message, "color: #CF000F;", data);
@@ -70,7 +70,7 @@ var ClassLogger = (function () {
     ClassLogger.prototype.Warn = function (message, data) {
 
         if (DEBUG) {
-            message = kendo.toString(new Date(), "G") + " - Warn:  " + message;
+            message = new Date() + " - Warn:  " + message;
 
             if (arguments[1] != undefined) {
                 console.log("%c" + message, "color: #F9690E;", data);
@@ -91,7 +91,7 @@ var ClassLogger = (function () {
     ClassLogger.prototype.Info = function (message, data) {
 
         if (DEBUG) {
-            message = kendo.toString(new Date(), "G") + " - Info:  " + message;
+            message = new Date() + " - Info:  " + message;
 
             if (arguments[1] != undefined) {
                 console.log("%c" + message, "color: #2ECC71;", data);
@@ -112,7 +112,7 @@ var ClassLogger = (function () {
     ClassLogger.prototype.Debug = function (message, data) {
 
         if (DEBUG) {
-            message = kendo.toString(new Date(), "G") + " - Debug:  " + message;
+            message = new Date() + " - Debug:  " + message;
 
             if (arguments[1] != undefined) {
                 console.log("%c" + message, "color: #000000;", data);
